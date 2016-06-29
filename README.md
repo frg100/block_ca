@@ -3,7 +3,7 @@ Python module for evolving a block cellular automata
 
 Functions and docstrings:
 
-def open_file(file_name):
+`def open_file(file_name):
     """
     Opens a file and creates a dish of all the bits of the file
     --------------
@@ -13,9 +13,9 @@ def open_file(file_name):
     --------------
     dish : list
       A 2D nested array. This dish now contains all the information in the file with each bit reading like an english sentence. The first bits start at the top and move right and once the end of the line is reached, the bit order continues on the next line
-    """
+    """`
 
-def rule_list_reversal(forward_rule_list)
+`def rule_list_reversal(forward_rule_list)
     """
     Reverses a rule for use in the reverse evolution.
     --------------
@@ -25,7 +25,7 @@ def rule_list_reversal(forward_rule_list)
     --------------
     reverse_rule_list : list
       A list with 16 items. It is also a rule_list, but using this new list, you can reverse the evolution to recover the otiginal information
-    """
+    """`
   
 def forward_evolution(generations, rule_list, dish):
     """
