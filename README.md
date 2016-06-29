@@ -3,19 +3,19 @@ Python module for evolving a block cellular automata
 
 Functions and docstrings:
 
-`def open_file(file_name):
+def open_file(file_name):
     """
     Opens a file and creates a dish of all the bits of the file
     --------------
     file_name : string
-      The file name specifies which file to open, assuming it is in the same directory as the program.
+        The file name specifies which file to open, assuming it is in the same directory as the program.
     Returns
     --------------
     dish : list
-      A 2D nested array. This dish now contains all the information in the file with each bit reading like an english sentence. The first bits start at the top and move right and once the end of the line is reached, the bit order continues on the next line
-    """`
+        A 2D nested array. This dish now contains all the information in the file with each bit reading like an english sentence. The first bits start at the top and move right and once the end of the line is reached, the bit order continues on the next line
+    """
 
-`def rule_list_reversal(forward_rule_list)
+def rule_list_reversal(forward_rule_list)
     """
     Reverses a rule for use in the reverse evolution.
     --------------
