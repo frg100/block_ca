@@ -1,6 +1,11 @@
 # block_ca
 Python module for evolving a block cellular automata
 
+"A block cellular automaton or partitioning cellular automaton is a special kind of cellular automaton in which the lattice of cells is divided into non-overlapping blocks (with different partitions at different time steps) and the transition rule is applied to a whole block at a time rather than a single cell"         -[Wikipedia](https://en.wikipedia.org/wiki/Block_cellular_automaton)
+
+One of the more famous examples of a block cellular automata that uses the margolus neighborhood is the [__Critters Rule](https://en.wikipedia.org/wiki/Critters_(block_cellular_automaton))
+
+
 Functions and docstrings:
 
 ```
