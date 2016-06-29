@@ -5,7 +5,7 @@ Functions and docstrings:
 
 ```
 def open_file(file_name):
-    """
+
     Opens a file and creates a dish of all the bits of the file
     --------------
     file_name : string
@@ -14,10 +14,10 @@ def open_file(file_name):
     --------------
     dish : list
         A 2D nested array. This dish now contains all the information in the file with each bit reading like an english sentence. The first bits start at the top and move right and once the end of the line is reached, the bit order continues on the next line
-    """
 
-def rule_list_reversal(forward_rule_list)
-    """
+
+def rule_list_reversal(forward_rule_list):
+
     Reverses a rule for use in the reverse evolution.
     --------------
     forward_rule_list : list
@@ -25,11 +25,11 @@ def rule_list_reversal(forward_rule_list)
     Returns
     --------------
     reverse_rule_list : list
-      A list with 16 items. It is also a rule_list, but using this new list, you can reverse the evolution to recover the otiginal information
-    """`
+      A list with 16 items. It is also a rule_list, but using this new list, you can reverse the evolution to recover the original information
+
   
 def forward_evolution(generations, rule_list, dish):
-    """
+
     Performs the forward evolution of the block cellular automata given the forward rule list and the starting dish for the specified number of generations.
     --------------
     generations : int
@@ -42,10 +42,10 @@ def forward_evolution(generations, rule_list, dish):
     --------------
     dish : list
       A 2D nested array. This new dish is evolved using the specified rule list for the specified number of generations
-    """
+
     
 def reverse_evolution(generations, rule_list, dish):
-    """
+
     Performs the reverse evolution of the block cellular automata given the forward rule list and the starting dish for the specified number of generations.
     --------------
     generations : int
@@ -58,10 +58,10 @@ def reverse_evolution(generations, rule_list, dish):
     --------------
     dish : list
       A 2D nested array. This new dish is evolved using the specified rule list for the specified number of generations.
-    """
+
   
 def calculate_entropy_of_dish(dish):
-    """
+
     Calculates the Shannon entropy of the dish.
     --------------
     dish : list
@@ -70,11 +70,10 @@ def calculate_entropy_of_dish(dish):
     --------------
     entropy : int
       The Shannon entropy of the information in the dish
-    """
-    
-    
+
+
 def write_dish_to_file(file_name,dish):
-    """
+
     Writes the dish back into a file.
     --------------
     file_name : string
@@ -84,7 +83,6 @@ def write_dish_to_file(file_name,dish):
     Returns
     --------------
     None, creates the file but doesn't return anything specifically
-    """
 ```
     
     """
