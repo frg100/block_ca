@@ -3,6 +3,7 @@ Python module for evolving a block cellular automata
 
 Functions and docstrings:
 
+```
 def open_file(file_name):
     """
     Opens a file and creates a dish of all the bits of the file
@@ -84,5 +85,6 @@ def write_dish_to_file(file_name,dish):
     --------------
     None, creates the file but doesn't return anything specifically
     """
+```
     
     """
