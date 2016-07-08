@@ -89,5 +89,3 @@ def write_dish_to_file(file_name,dish):
     --------------
     None, creates the file but doesn't return anything specifically
 ```
-    
-    """
