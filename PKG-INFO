@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: block_ca
+Version: 1.0
+Summary: Python module for evolving a block cellular automata
+Home-page: https://github.com/frg100/block_ca
+Author: Federico Reyes Gomez
+Author-email: frg100@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/frg100/block_ca/tarball/1.0
+Description: UNKNOWN
+Keywords: block,cellular,automata,margolus
+Platform: UNKNOWN
