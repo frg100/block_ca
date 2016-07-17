@@ -10,11 +10,7 @@ config_no_to_cells = {0: '0000', 1: '1000', 2: '0100', 3: '1100', 4: '0010', 5: 
 import numpy as np
 from random import randint
 import random
-from time import sleep
 import math
-import time
-import filecmp
-import cProfile
 from collections import OrderedDict
 import sys as Sys
 ###### IMPORTING MODULES ########
@@ -112,7 +108,7 @@ def forward_block_evolution(generations, rule_list, dish_dict):
         dish = dish_dict[key]
         dish = forward_evolution(generations, rule_list, dish)
         dishes_completed += 1
-        printProgress(dishes_completed, len(dish_dict), prefix = 'Progress:', suffix = 'Complete', barLength = 50)
+        printProgress(dishes_completed, len(dish_dict), prefix = 'Forward evolution:', suffix = 'Complete', barLength = 50)
 
     return dish_dict
     
@@ -125,7 +121,7 @@ def reverse_block_evolution(generations, rule_list, dish_dict):
         dish = dish_dict[key]
         dish = reverse_evolution(generations, rule_list, dish)
         dishes_completed += 1
-        printProgress(dishes_completed, len(dish_dict), prefix = 'Progress:', suffix = 'Complete', barLength = 50)
+        printProgress(dishes_completed, len(dish_dict), prefix = 'Reverse Evolution:', suffix = 'Complete', barLength = 50)
 
     return dish_dict
 
@@ -161,7 +157,7 @@ def calculate_hamming_distance(original_dish,current_dish):
     
     for x in range(height):
         for y in range(width):
-            if original_dish[x][y] == current_dish[x][y]:
+            if original_dish[x][y] != current_dish[x][y]:
                 hamming_distance += 1
                 total += 1
             else:
