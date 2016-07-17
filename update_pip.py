@@ -24,6 +24,12 @@ file.write("".join(text) )
 file.close()
 print "\nDone!"
 
+os.system("git add .")
+message = raw_input("\nWhat would you like the commit message to be?")
+os.system("git commit -m %r" %message)
+os.system("git push")
+
+
 os.system("""git tag %s -m "" """ %(version) )
 os.system("git push --tags origin master")
 os.system("python setup.py sdist upload -r pypi")
